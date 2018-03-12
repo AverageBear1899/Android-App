@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CF005A"
+    android:layout_height="match_parent"
+    tools:context="com.example.mark.project_app.MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPlace1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="123dp"
+                android:layout_marginStart="123dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/kelvingrove"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button5"
+                android:layout_toEndOf="@+id/button5" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgPlace1"
+                android:layout_marginTop="20dp"
+                android:text="Kelvingrove Art Gallery and Museum is one of Scotland's most popular free attractions and features 22 themed, state-of-the-art galleries displaying an astonishing 8000 objects.
+
+The collections at Kelvingrove are extensive, wide-ranging and internationally significant. They include natural history, arms and armour, art from many art movements and periods of history and much more.
+
+The most famous painting on display at Kelvingrove is the Salvador Dali masterpiece ‘Christ of St John of the Cross’. Sir Roger the Asian elephant is another big museum attraction. There is even a Spitfire plane hanging from the ceiling of the west court.
+
+The refurbished building is an attraction in its own right and Kelvingrove welcomes families, its displays having been designed with children in mind. Besides all the exhibits, Kelvingrove has a restaurant, a café and a gift shop."
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnGettingThere"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView9"
+                android:layout_marginLeft="53dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="21dp"
+                android:background="#CF005A"
+                android:onClick="btnGettingThere_OnClick"
+                android:text="Getting there"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:onClick="btnBack_OnClick"
+                app:srcCompat="@drawable/backico"
+                tools:layout_editor_absoluteX="7dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <Button
+                android:id="@+id/btnComments"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnGettingThere"
+                android:layout_alignBottom="@+id/btnGettingThere"
+                android:layout_toEndOf="@+id/imgPlace1"
+                android:layout_toRightOf="@+id/imgPlace1"
+                android:onClick="btnComments_onClick"
+                android:background="#CF005A"
+                android:text="Comments"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CF005A"
+    tools:context="com.example.mark.project_app.PlacesToVisit">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:onClick="btnBack_OnClick"
+                app:srcCompat="@drawable/backico"
+                tools:layout_editor_absoluteX="7dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <ImageView
+                android:id="@+id/imageOne"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="ImageOne_OnClick"
+                app:srcCompat="@drawable/kendricklamar" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Glasgow Summer Sessions returns in 2018, with one of the biggest announcements in the festival’s 5-year history, as Grammy award winning international icon Kendrick Lamar headlines the outdoor festival in Glasgow on Wednesday 29th August 2018." />
+
+            <ImageView
+                android:id="@+id/ImageTwo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:onClick="ImageTwo_OnClick"
+                app:srcCompat="@drawable/bandstand" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Summer Nights is returning to the 2,500 capacity Kelvingrove Bandstand for two weeks again this year! Located in Glasgow’s Kelvingrove Park." />
+
+            <ImageView
+                android:id="@+id/imageThree"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:onClick="ImageThree_OnClick"
+                app:srcCompat="@drawable/peppa" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Peppa Pig and friends are back in the brand new live show Peppa Pig’s Adventure!" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+

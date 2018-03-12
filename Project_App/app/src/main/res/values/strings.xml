@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project_App</string>
+    <string name="title_activity_login_">Login_Activity</string>
+    <string name="title_activity_place1_maps">Map</string>
+</resources>

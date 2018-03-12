@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CF005A"
+    tools:context="com.example.mark.project_app.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="411dp"
+        app:srcCompat="@drawable/people_make"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="50dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CF005A"
+    android:layout_height="match_parent"
+    tools:context="com.example.mark.project_app.MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPlace1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btnBack"
+                android:layout_marginTop="14dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/kendricklamar" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgPlace1"
+                android:layout_marginTop="20dp"
+                android:text="Glasgow Summer Sessions returns in 2018, with one of the biggest announcements in the festival’s 5-year history, as Grammy award winning international icon Kendrick Lamar headlines the outdoor festival in Glasgow on Wednesday 29th August 2018. One of the defining hip-hop artists of our generation is the exciting first addition to this year’s bill with more artists to be announced.
+
+Fresh from an incredible five-star sold out performance at The SSE Hydro on Sunday 11th February, the news comes following Kendrick Lamar’s recent five Grammy Award wins. Kendrick Lamar is a true visionary and era-defining performer and a massively exciting addition to the bustling Scottish live line-up in 2018.
+
+Kendrick Lamar’s fourth album DAMN. saw him reach new heights. Picking up ‘Best Rap Album’ at the 2018 Grammys, as well as nods for ‘HUMBLE.’ with ‘Best Rap Performance’, ‘Best Music Video’ and ‘Best Rap Song’, Kendrick Lamar has collaborated with Rihanna, Dr Dre, Drake, The Weeknd, N.E.R.D and Snoop Dogg to name a few, and this year co-produced the soundtrack for Marvel’s newest, and most culturally significant, superhero movie Black Panther.
+
+The Compton singer broke onto the scene with his 2012 debut Good Kid, m.A.A.d City and now sells out arenas around the world, enchanting audiences with his enigmatic, high-powered sets which showcase a socio-political analysis and self-awareness rarely seen on today’s music scene. Kendrick Lamar’s set at Glasgow Summer Sessions will allow Scottish audiences to see a rapper at the very top of his game, and a star of seismic levels take to the stage.
+
+Glasgow Summer Sessions will once again bring the biggest and best artists in the world to Bellahouston Park this summer, giving fans an unmissable experience to round off their summer."
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnGettingThere"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView9"
+                android:layout_marginLeft="53dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="21dp"
+                android:background="#CF005A"
+                android:onClick="btnTickets_OnClick"
+                android:text="Get Tickets"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:onClick="btnBack_OnClick"
+                app:srcCompat="@drawable/backico"
+                tools:layout_editor_absoluteX="7dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnGettingThere"
+                android:layout_marginLeft="67dp"
+                android:layout_marginStart="67dp"
+                android:layout_toEndOf="@+id/btnGettingThere"
+                android:layout_toRightOf="@+id/btnGettingThere"
+                android:background="#CF005A"
+                android:onClick="btnMoreInfo_OnClick"
+                android:text="More Info"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+
+

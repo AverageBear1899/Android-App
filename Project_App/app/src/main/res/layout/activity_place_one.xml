@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CF005A"
+    android:layout_height="match_parent"
+    tools:context="com.example.mark.project_app.MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPlace1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="123dp"
+                android:layout_marginStart="123dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:onClick="attraction1_Click"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/cathedral"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button5"
+                android:layout_toEndOf="@+id/button5" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgPlace1"
+                android:layout_marginTop="20dp"
+                android:text="This medieval cathedral is thought to have been built on the site of St Kentigern’s tomb and marks the birthplace of the city of Glasgow.
+
+One of Scotland's most magnificent medieval buildings, Glasgow Cathedral is the only one on the Scottish mainland to survive the Reformation of 1560 intact.
+
+Glasgow Cathedral is built on the site where St Kentigern, or Mungo, is thought to have been buried in AD 612. St Kentigern was the first bishop within the ancient British kingdom of Strathclyde, and the present cathedral was built during the 13th - 15th centuries.
+
+Admire carved stone bosses on the ceiling of the Blackadder Aisle, and one of the finest post-war collections of stained glass windows in Britain."
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnGettingThere"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView9"
+                android:layout_marginLeft="53dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="21dp"
+                android:background="#CF005A"
+                android:onClick="btnGettingThere_OnClick"
+                android:text="Getting there"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:onClick="btnBack_OnClick"
+                app:srcCompat="@drawable/backico"
+                tools:layout_editor_absoluteX="7dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <Button
+                android:id="@+id/btnComments"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnGettingThere"
+                android:layout_alignBottom="@+id/btnGettingThere"
+                android:layout_toEndOf="@+id/imgPlace1"
+                android:layout_toRightOf="@+id/imgPlace1"
+                android:background="#CF005A"
+                android:onClick="btnComments_onClick"
+                android:text="Comments"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
